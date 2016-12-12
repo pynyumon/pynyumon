@@ -1,4 +1,4 @@
-# スクレイピング
+# 2.スクレイピング
 
 Pythonでスクレイピングをする時に使えるツールなどのメモです。
 
@@ -9,7 +9,7 @@ GETとPOSTはrequests.getとrequests.postを使えば大体事足ります。
 
 インストール
 
-```
+```sh
 $ pip install requests
 ```
 
