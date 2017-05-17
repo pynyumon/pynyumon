@@ -7,7 +7,7 @@
 
 ## Pythonをインストール
 
-* Python 3.5.2をダウンロードしてインストールしてください
+* Python 3.6.1をダウンロードしてインストールしてください
 * https://www.python.org/downloads/
 * Windowsの人はPATHの設定を行ってください。下記のページが参考になります
 

@@ -3,7 +3,7 @@
 ## インストール
 
 https://www.python.org/downloads/ にインストーラがあるのでそれを使ってインストールします。
-現在(2015/11/15)の最新はPython3.5です。
+現在(2017/5/17)の最新はPython3.6.1です。
 
 Windows環境の方は環境変数を設定してください。
 この辺が参考になるかも。
@@ -15,8 +15,8 @@ http://www.pythonweb.jp/install/setup/index1.html
 
 ```python
 $ python
-Python 3.5.2 (v3.5.2:4def2a2901a5, Jun 26 2016, 10:47:25) 
-[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Python 3.6.1 (default, Apr  4 2017, 09:40:21)
+[GCC 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.38)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
@@ -414,7 +414,7 @@ import文を使うことで標準モジュールを使うことができます�
 - os 実行しているOSなどの環境の情報の取得や操作など
 
 他にもいっぱいあります。
-http://docs.python.jp/3.5/library/index.html
+http://docs.python.jp/3/library/index.html
 
 ### サードパーティパッケージを使う
 
@@ -471,7 +471,7 @@ requestsがアンインストールされました。
 venv環境を作成します。
 
 ```sh
-$ pyvenv-3.5 env
+$ python -m venv env
 ```
 
 venv環境に入ります。(activateスクリプトをsourceコマンドで読み込む)
@@ -518,7 +518,7 @@ ImportError: No module named 'requests'
 venv環境を作成します。
 
 ```
-c:\Temp>c:\Python35\python -m venv env
+c:\Temp>c:\Python36\python -m venv env
 ```
 
 venv環境に入ります。(activate.batを実行する)

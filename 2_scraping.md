@@ -41,7 +41,7 @@ BeautifulSoup objectのよく使うmethod
 
 
 詳しくはこちらを参照してください。
-http://kondou.com/BS4/
+https://www.crummy.com/software/BeautifulSoup/bs4/doc/
 
 ## データの永続化
 
@@ -49,7 +49,7 @@ http://kondou.com/BS4/
 
 CSVはカンマで区切られた形式のファイルです。csvモジュールが使えます。
 csv モジュールのさらに詳しい内容についてはこちらを参照してください。
-http://docs.python.jp/3.4/library/csv.html
+http://docs.python.jp/3/library/csv.html
 
 #### 書き込み
 
@@ -92,7 +92,7 @@ JSON形式もよく使われる形式です。標準モジュールの `json` �
 - json.load() -> ファイル内のJSON文字列を読み込んでオブジェクトにする
 
 詳しい内容についてはこちらを参照してください。
-http://docs.python.jp/3.4/library/json.html
+http://docs.python.jp/3/library/json.html
 
 ## サンプル
 
