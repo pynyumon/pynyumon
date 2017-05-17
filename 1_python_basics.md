@@ -13,7 +13,7 @@ http://www.pythonweb.jp/install/setup/index1.html
 
 ### Pythonの実行
 
-```python
+```sh
 $ python3.6
 Python 3.6.1 (default, Apr  4 2017, 09:40:21)
 [GCC 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.38)] on darwin
@@ -517,21 +517,21 @@ ImportError: No module named 'requests'
 
 venv環境を作成します。
 
-```
+```sh
 c:\Temp>c:\Python36\python -m venv env
 ```
 
 venv環境に入ります。(activate.batを実行する)
 成功した場合はプロンプトマークが変わります。
 
-```
+```sh
 c:\Temp>env\Scripts\activate
 (env) c:\Temp>
 ```
 
 例としてrequestsをインストールします。
 
-```
+```sh
 (env) c:\Temp>pip install requests
 ```
 
@@ -545,7 +545,7 @@ installしたrequestsがimportできます。
 環境から出るためにはdeactivateを実行します。
 成功するとプロンプトマークがもとに戻ります。
 
-```
+```sh
 (env) c:\Temp>deactivate
 c:\Temp>
 ```
@@ -571,7 +571,7 @@ $ rm -rf env
 
 Windows
 
-```
+```sh
 c:\Temp> rd /q /s env
 ```
 
