@@ -14,7 +14,7 @@ http://www.pythonweb.jp/install/setup/index1.html
 ### Pythonの実行
 
 ```python
-$ python
+$ python3.6
 Python 3.6.1 (default, Apr  4 2017, 09:40:21)
 [GCC 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.38)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -471,7 +471,7 @@ requestsがアンインストールされました。
 venv環境を作成します。
 
 ```sh
-$ python -m venv env
+$ python3.6 -m venv env
 ```
 
 venv環境に入ります。(activateスクリプトをsourceコマンドで読み込む)
