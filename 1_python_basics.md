@@ -169,8 +169,8 @@ dictは名前と値のペアを持つデータ構造です。
 
 ```python
 >>> fruits = {
-... 'apple': 100,
-... 'orange': 50,
+...     'apple': 100,
+...     'orange': 50,
 ... }
 >>>
 ```
@@ -253,12 +253,12 @@ nameやcountの値を変更することで計算する部分のコードを変�
 
 ```python
 >>> fruits = {
-... 'apple': 100,
-... 'orange': 50,
+...     'apple': 100,
+...     'orange': 50,
 ... }
 >>>
 >>> def calc_fruit_amount(name, count):
-...   return fruits[name] * count
+...     return fruits[name] * count
 ...
 >>>
 ```
@@ -287,20 +287,20 @@ if に続く条がTrueのときにifの中のブロックを実行します。if
 fruits = {
     'apple': 100,
     'orange': 50,
-    }
+}
 
 def calc_fruit_amount(name, count):
     return fruits[name] * count
 
 
 def decide_amount(name, count, threshold=1000):
-     amount = calc_fruit_amount(name, count)
-     if amount > threshold:
-           print('高い')
-     elif amount == threshold:
-           print('普通')
-     else:  # < threshold
-           print('安い')
+    amount = calc_fruit_amount(name, count)
+    if amount > threshold:
+        print('高い')
+    elif amount == threshold:
+        print('普通')
+    else:  # < threshold
+        print('安い')
 
 ```
 
@@ -316,7 +316,7 @@ decide_amount()では合計金額がthresholdより大きいか同じか未満�
 fruits = {
     'apple': 100,
     'orange': 50,
-    }
+}
 
 for name in ['apple', 'orange']:
     print('{} {} 円'.format(name, fruits[name]))
@@ -329,7 +329,7 @@ fruitsの名前と金額を表示しています。次のコードも同じ挙�
 fruits = {
     'apple': 100,
     'orange': 50,
-    }
+}
 
 for name, amount in fruits.items():
     print('{} {} 円'.format(name, amount))
@@ -357,7 +357,7 @@ KeyError: 'ham'
 fruits = {
     'apple': 100,
     'orange': 50,
-    }
+}
 
 def calc_fruit_amount(name, count):
     try:
@@ -379,7 +379,7 @@ fizzbuzzとは
 プログラミングの練習課題としてよく使われる題材です。
 
 ```python
-for ii in range(1,101):
+for ii in range(1, 101):
     if ii % 15 == 0:
        print('FizzBuzz')
     elif ii % 5 == 0:
