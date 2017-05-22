@@ -55,19 +55,19 @@ http://docs.python.jp/3/library/csv.html
 
 ```py
 import csv
-with open('some.csv', 'wb') as f:
+with open('some.csv', 'w') as f:
     writer = csv.writer(f)
-    writer.writerows(someiterable)
+    writer.writerows(['1', '2', '3'])
 ```
 
 #### 読み取り
 
 ```py
 import csv
-with open('some.csv', 'rb') as f:
+with open('some.csv', 'r') as f:
     reader = csv.reader(f)
     for row in reader:
-        print row
+        print(row)
 ```
 
 ### JSON形式
