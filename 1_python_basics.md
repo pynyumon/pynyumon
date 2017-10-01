@@ -2,12 +2,20 @@
 
 ## インストール
 
-https://www.python.org/downloads/ にインストーラがあるのでそれを使ってインストールします。
-現在(2017/5/17)の最新はPython3.6.1です。
+[Python の公式サイトのダウンロードページ](https://www.python.org/downloads/) にインストーラーがあるので、それを使ってインストールします。
+現在(2017/10/01)の最新は Python3.6.2 です。
 
-Windows環境の方は環境変数を設定してください。
-この辺が参考になるかも。
-http://www.pythonweb.jp/install/setup/index1.html
+## コマンドラインの実行環境について
+
+コマンドラインを利用したパソコンの操作を行います。
+普段自分で使っている環境がある場合はそちらを使うのが良いでしょう。
+
+普段それほどコマンドラインを利用する機会がなく、どうすればいいかわからない方は以下のものを使うのが良いです。
+
+OS | アプリケーション名
+-|-
+Windows | Windows PoweShell
+macOS | ターミナル
 
 ## Pythonについて
 
@@ -21,7 +29,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-
 ### スクリプトの書き方と実行方法
 
 #### とりあえず書いて実行する
@@ -29,9 +36,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 書いて...
 
 ```python
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
-
 def main():
     print('GOGO')
 
@@ -47,18 +51,6 @@ GOGO
 ```
 
 #### 一行ずつ解説
-
-```python
-#! /usr/bin/env python
-```
-
-シェバングです。 (Unix系のお約束ごと (Pythonの文脈じゃ無いので気になる方はこっちを読んでね http://cpplover.blogspot.jp/2013/08/shebang.html ))
-
-```python
-# -*- coding: utf-8 -*-
-```
-
-文字コード指定です。 (これが無いと日本語コメント書くときに死ねるケースがある)
 
 ```python
 def main():
@@ -77,7 +69,7 @@ if __name__ == '__main__':
 ```
 
 スクリプトとしてそのファイルを実行した場合は `__name__` という変数に `__main__` という文字列が入っています。
-そのためスクリプトとして実行されたときにはこの条件はTrueになるので、この中のブロックが実質てきなエントリーポイントになります。
+そのためスクリプトとして実行されたときにはこの条件はTrueになるので、この中のブロックが実質的なエントリーポイントになります。
 import文でimportされた場合は `__name__` にはそのモジュール名が入っているのでこのブロックは実行されません。
 
 ```python
@@ -102,6 +94,7 @@ import文でimportされた場合は `__name__` にはそのモジュール名�
 >>> type({'first': 1, 'second': 2})
 <class 'dict'>
 ```
+
 #### int - 整数
 
 整数です。
@@ -166,7 +159,6 @@ False
 ```
 
 除去
-
 
 要素が複数ある場合は最初の要素が除去されます。
 
@@ -461,6 +453,7 @@ Proceed (y/n)? y [ENTER]
   Successfully uninstalled requests-2.7.0
 $
 ```
+
 requestsがアンインストールされました。
 
 サードパーティライブラリは [pypi](https://pypi.python.org/) に登録すると、パッケージ名だけでpip installできるようになります。よく使われるライブラリのほとんどがpypiに登録されています。

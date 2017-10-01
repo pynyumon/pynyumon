@@ -7,11 +7,19 @@
 
 ## Pythonをインストール
 
-* Python 3.6.2をダウンロードしてインストールしてください
-* https://www.python.org/downloads/
-* Windowsの人はPATHの設定を行ってください。下記のページが参考になります
+* Python 3.6.2 をダウンロードしてインストールしてください
 
-  * http://www.pythonweb.jp/install/setup/index1.html
+  * https://www.python.org/downloads/
+
+* Windowsの人はPATHの設定を行ってください。
+
+  * Intall の際に「Add Python 3.6 to PATH」にチェックを入れると自動的に設定されます。
+
+    ![win-python-installer-1](images/0/win-python-installer-1.png)
+
+  * 上記チェックをいれずにインストールした場合は以下のリンクを参考に設定を行って下さい。
+
+    * http://www.pythonweb.jp/install/setup/index1.html
 
 * **condaを使っている人**
 
@@ -22,11 +30,9 @@
 
 * プログラムを書くためのエディタを準備してください
 * 普段使っているエディタがある人はそのエディタを使ってください。なお、utf-8で保存できる必要があります
-* 普段エディタを使っていない人は Atom というエディタがおすすめなので、インストールしておいてください
+* 普段エディタを使っていない人は Visual Studio Code(通称 VS Code) というエディタがおすすめなので、インストールしておいてください
 
-  * [Atom](https://atom.io/ "Atom")
-  * メニューを日本語化したい人はこちらもあわせてどうぞ
-  * [Atomでパッケージをインストールする方法とメニューの日本語化 – nocorica](http://blog.nocorica.jp/2015/03/atom-package-install/ "Atomでパッケージをインストールする方法とメニューの日本語化 – nocorica")
+  * [Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com/ "Visual Studio Code - Code Editing. Redefined")
 
 * 他に以下のIDEもおすすめです
 
