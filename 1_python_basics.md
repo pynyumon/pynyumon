@@ -2,12 +2,8 @@
 
 ## インストール
 
-https://www.python.org/downloads/ にインストーラがあるのでそれを使ってインストールします。
-現在(2017/10/01)の最新はPython3.6.2です。
-
-Windows環境の方は環境変数を設定してください。
-この辺が参考になるかも。
-http://www.pythonweb.jp/install/setup/index1.html
+[Python の公式サイトのダウンロードページ](https://www.python.org/downloads/) にインストーラーがあるので、それを使ってインストールします。
+現在(2017/10/01)の最新は Python3.6.2 です。
 
 ## Pythonについて
 
