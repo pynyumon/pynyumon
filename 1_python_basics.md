@@ -29,9 +29,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 書いて...
 
 ```python
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
-
 def main():
     print('GOGO')
 
@@ -47,18 +44,6 @@ GOGO
 ```
 
 #### 一行ずつ解説
-
-```python
-#! /usr/bin/env python
-```
-
-シェバングです。 (Unix系のお約束ごと (Pythonの文脈じゃ無いので気になる方はこっちを読んでね http://cpplover.blogspot.jp/2013/08/shebang.html ))
-
-```python
-# -*- coding: utf-8 -*-
-```
-
-文字コード指定です。 (これが無いと日本語コメント書くときに死ねるケースがある)
 
 ```python
 def main():
