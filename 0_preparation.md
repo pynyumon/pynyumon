@@ -13,7 +13,7 @@
 
 * Windowsの人はPATHの設定を行ってください。
 
-  * Intall の際に「Add Python 3.6 to PATH」にチェックを入れると自動的に設定されます。
+  * Install の際に「Add Python 3.6 to PATH」にチェックを入れると自動的に設定されます。
 
     ![win-python-installer-1](images/0/win-python-installer-1.png)
 
