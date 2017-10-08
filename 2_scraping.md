@@ -1,6 +1,6 @@
 # 2.スクレイピング
 
-スクレイピングとは Web サイトから自分のほしい情報を絞り込んで収集する技術のことをいいます。  
+スクレイピングとは Web サイトから自分のほしい情報を取り出して収集する技術のことをいいます。  
 おおまかな処理の流れとしては以下のイメージです。
 
 ![scraping-imagine](images/2/scraping-imagine.jpg)
@@ -10,7 +10,7 @@ Python で簡単にスクレイピングを行う際には以下のサードパ�
 処理 | ライブラリ | ドキュメント
 -|-|-
 Web ページから情報を取得 (図の1,2) | requests | [Requests: HTTP for Humans](http://docs.python-requests.org/en/master/)
-response から抜きたい情報を取り出す (図の3) | BeautifulSoup | [Beautiful Soup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+response からほしい情報を取り出す (図の3) | BeautifulSoup | [Beautiful Soup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 ## requests - Webからデータを取得する
 
