@@ -21,7 +21,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-
 ### スクリプトの書き方と実行方法
 
 #### とりあえず書いて実行する
@@ -29,9 +28,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 書いて...
 
 ```python
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
-
 def main():
     print('GOGO')
 
@@ -47,18 +43,6 @@ GOGO
 ```
 
 #### 一行ずつ解説
-
-```python
-#! /usr/bin/env python
-```
-
-シェバングです。 (Unix系のお約束ごと (Pythonの文脈じゃ無いので気になる方はこっちを読んでね http://cpplover.blogspot.jp/2013/08/shebang.html ))
-
-```python
-# -*- coding: utf-8 -*-
-```
-
-文字コード指定です。 (これが無いと日本語コメント書くときに死ねるケースがある)
 
 ```python
 def main():
@@ -77,7 +61,7 @@ if __name__ == '__main__':
 ```
 
 スクリプトとしてそのファイルを実行した場合は `__name__` という変数に `__main__` という文字列が入っています。
-そのためスクリプトとして実行されたときにはこの条件はTrueになるので、この中のブロックが実質てきなエントリーポイントになります。
+そのためスクリプトとして実行されたときにはこの条件はTrueになるので、この中のブロックが実質的なエントリーポイントになります。
 import文でimportされた場合は `__name__` にはそのモジュール名が入っているのでこのブロックは実行されません。
 
 ```python
@@ -102,6 +86,7 @@ import文でimportされた場合は `__name__` にはそのモジュール名�
 >>> type({'first': 1, 'second': 2})
 <class 'dict'>
 ```
+
 #### int - 整数
 
 整数です。
@@ -166,7 +151,6 @@ False
 ```
 
 除去
-
 
 要素が複数ある場合は最初の要素が除去されます。
 
@@ -461,6 +445,7 @@ Proceed (y/n)? y [ENTER]
   Successfully uninstalled requests-2.7.0
 $
 ```
+
 requestsがアンインストールされました。
 
 サードパーティライブラリは [pypi](https://pypi.python.org/) に登録すると、パッケージ名だけでpip installできるようになります。よく使われるライブラリのほとんどがpypiに登録されています。
