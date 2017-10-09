@@ -10,7 +10,7 @@ Python で簡単にスクレイピングを行う際には以下のサードパ�
 処理 | ライブラリ | ドキュメント
 -|-|-
 Web ページから情報を取得 (図の1,2) | Requests | [Requests: HTTP for Humans](http://docs.python-requests.org/en/master/)
-response からほしい情報を取り出す (図の3) | BeautifulSoup | [Beautiful Soup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+response からほしい情報を取り出す (図の3) | Beautiful Soup 4 | [Beautiful Soup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 ## requests - Webからデータを取得する
 
