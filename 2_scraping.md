@@ -22,7 +22,7 @@ HTMLを解析するにはBeautifulSoup4を使うと良いでしょう。
 
 ```py
 >>> from bs4 import BeautifulSoup
->>> soup = BeautifulSoup('<div><h1 id="test">TEST</h1></div>', 'html')
+>>> soup = BeautifulSoup('<div><h1 id="test">TEST</h1></div>', 'html.parser')
 >>> soup.select_one('div h1#test').text
 'TEST'
 ```
@@ -55,19 +55,19 @@ http://docs.python.jp/3/library/csv.html
 
 ```py
 import csv
-with open('some.csv', 'wb') as f:
+with open('some.csv', 'w') as f:
     writer = csv.writer(f)
-    writer.writerows(someiterable)
+    writer.writerows(['1', '2', '3'])
 ```
 
 #### 読み取り
 
 ```py
 import csv
-with open('some.csv', 'rb') as f:
+with open('some.csv', 'r') as f:
     reader = csv.reader(f)
     for row in reader:
-        print row
+        print(row)
 ```
 
 ### JSON形式
@@ -108,7 +108,6 @@ http://docs.python.jp/3/library/json.html
 ## データ取ってみたら面白そうなサイト
 
 - https://teratail.com/ トップページのエントリとか刈り取ってみるとよいかも
-- http://isitchristmas.com/ クリスマス判定 (時期的に)
-- https://data.nasa.gov/developer NASAのデータが利用できるので調べてみると面白いものがあるかもしれない
+- http://isitchristmas.com/ クリスマス判定
 
 他にも良さそうなサイトはいっぱいありそう...
