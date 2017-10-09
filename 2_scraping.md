@@ -12,6 +12,9 @@ Python で簡単にスクレイピングを行う際には以下のサードパ�
 Web ページから情報を取得 (図の1,2) | Requests | [Requests: HTTP for Humans](http://docs.python-requests.org/en/master/)
 response からほしい情報を取り出す (図の3) | Beautiful Soup 4 | [Beautiful Soup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
+- Beautiful Soup 4 は有志による日本語翻訳版のドキュメントもあります。 **ただし 2013-11-19 で更新が止まっているので注意。** 参考までに。
+  - http://kondou.com/BS4/ 
+
 ## requests - Webからデータを取得する
 
 PythonでWebへのアクセスをする時に最も手軽な方法は `requests` を使う方法です。pipでインストールできます。
