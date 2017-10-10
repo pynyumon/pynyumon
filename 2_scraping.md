@@ -35,7 +35,7 @@ HTMLを解析するにはBeautifulSoup4を使うと良いでしょう。
 
 ```py
 >>> from bs4 import BeautifulSoup
->>> soup = BeautifulSoup('<div><h1 id="test">TEST</h1></div>', 'html')
+>>> soup = BeautifulSoup('<div><h1 id="test">TEST</h1></div>', 'html.parser')
 >>> soup.select_one('div h1#test').text
 'TEST'
 ```
