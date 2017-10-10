@@ -30,14 +30,15 @@
 
 * プログラムを書くためのエディタを準備してください
 * 普段使っているエディタがある人はそのエディタを使ってください。なお、utf-8で保存できる必要があります
-* 普段エディタを使っていない人は Atom というエディタがおすすめなので、インストールしておいてください
+* 普段エディタを使っていない人は Visual Studio Code(通称 VS Code) というエディタがおすすめなので、インストールしておいてください
+
+  * [Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com/ "Visual Studio Code - Code Editing. Redefined")
+
+* 他に以下のIDE,エディタもおすすめです
 
   * [Atom](https://atom.io/ "Atom")
-  * メニューを日本語化したい人はこちらもあわせてどうぞ
-  * [Atomでパッケージをインストールする方法とメニューの日本語化 – nocorica](http://blog.nocorica.jp/2015/03/atom-package-install/ "Atomでパッケージをインストールする方法とメニューの日本語化 – nocorica")
-
-* 他に以下のIDEもおすすめです
-
+    * メニューを日本語化したい人はこちらもあわせてどうぞ
+    * [Atomでパッケージをインストールする方法とメニューの日本語化 – nocorica](http://blog.nocorica.jp/2015/03/atom-package-install/ "Atomでパッケージをインストールする方法とメニューの日本語化 – nocorica")
   * [PyCharm](https://www.jetbrains.com/pycharm/download/ "PyCharm :: Download Latest Version of PyCharm")(Community版は無料です)
 
 ## connpass参加登録
