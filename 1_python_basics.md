@@ -13,6 +13,9 @@ http://www.pythonweb.jp/install/setup/index1.html
 
 ### Pythonの実行
 
+Pythonはコマンドラインを使用してプログラムを実行します。
+Windowsなら「PowerShell」, macOSなら「ターミナル」と呼ばれるアプリケーションを利用して行います。
+
 ```sh
 $ python3.6
 Python 3.6.1 (default, Apr  4 2017, 09:40:21)
