@@ -16,13 +16,24 @@ http://www.pythonweb.jp/install/setup/index1.html
 Pythonはコマンドラインを使用してプログラムを実行します。
 Windowsなら「PowerShell」, macOSなら「ターミナル」と呼ばれるアプリケーションを利用して行います。
 
-```sh
-$ python3.6
-Python 3.6.1 (default, Apr  4 2017, 09:40:21)
-[GCC 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.38)] on darwin
-Type "help", "copyright", "credits" or "license" for more information.
->>>
-```
+- Windows の例
+
+    ```
+    PS C:\> python
+    Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 17:26:49) [MSC v.1900 32 bit (Intel)] on win32
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>>
+    ```
+
+- macOS の例
+
+    ```
+    $ python3.6
+    Python 3.6.3 (v3.6.3:2c5fed86e0, Oct  3 2017, 00:32:08) 
+    [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>>
+    ```
 
 ### スクリプトの書き方と実行方法
 
