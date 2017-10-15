@@ -7,7 +7,7 @@
 
 ## Pythonをインストール
 
-* Python 3.6.2 をダウンロードしてインストールしてください
+* Python 3.6.3 をダウンロードしてインストールしてください
 
   * https://www.python.org/downloads/
 
