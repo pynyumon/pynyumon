@@ -109,6 +109,78 @@ http://docs.python.jp/3/library/json.html
 
 ## サンプル
 
+### PyNyumon #6 の講師・メンターを取得する
+
+[Python入門者向けハンズオン #6 - connpass](https://python-nyumon.connpass.com/event/62147/) の講師・メンター一覧を取得するものです。
+
+```python
+import requests
+from bs4 import BeautifulSoup
+
+
+def main():
+
+    # connpass の PyNumon#6 のイベント参加者・申込者一覧のURL
+    url = 'https://python-nyumon.connpass.com/event/62147/participation/#participants'
+
+    # requests で参加者一覧の情報と取得する
+    response = requests.get(url)
+
+    # response から HTML 部分(content) を取得
+    content = response.content
+
+    # BeautifulSoup に content を渡して解析の準備をする
+    soup = BeautifulSoup(content, 'html.parser')
+
+    # <div class="participation_table_area mb_20">  に該当するものを取り出す
+    # participation_tables は List
+    participation_tables = soup.find_all('div', class_='participation_table_area mb_20')
+
+    # participation_tables を順番に見て、"講師・メンター枠"の情報を取り出す
+    for participation_table in participation_tables:
+        # <table><thead><tr><th> に該当するタグの要素を取り出す (参加者枠の種類が記載されているので)
+        participant_type = participation_table.table.thead.tr.th.get_text()
+
+        # 参加者枠を示す文字に "講師・メンター枠" が含まれるものを取り出す
+        if '講師・メンター枠' in participant_type:
+            menters_table = participation_table
+
+    # 講師・メンター枠の HTML の中で class=display_name に該当するものを取り出す
+    # menter_names は List
+    menter_names = menters_table.find_all(class_='display_name')
+
+    # 取り出した 講師・メンター枠の要素から純粋な名前だけを取り出す(不純なものを取り除く)
+    for menter_name in menter_names:
+        print(menter_name.get_text().strip())
+
+
+if __name__ == '__main__':
+    main()
+```
+
+上記の内容を `pynyumon6-menters.py` といった適当な名前のファイルに保存して実行すると利用できます。  
+実行すると以下のとおりになります。
+
+```console
+$ python pynyumon6-menters.py
+Kei Iwasaki
+mocamocaland
+MasakiTakemori
+kashew_nuts
+OMEGA
+Ryo KAJI
+jbking
+kentaro0919
+nasa9084
+MatsumotoAyako
+massa142
+NaoY
+nobolis
+Matthias
+```
+
+### その他
+
 スクレイピングのサンプルとしていくつか準備しています。参考にしてください。ただし一般のサイトもあるのでリクエストをバンバン投げることはやめてください。
 間違ってもループをそのまま回したらダメですよ。
 
