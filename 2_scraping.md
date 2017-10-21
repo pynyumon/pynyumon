@@ -33,6 +33,12 @@ http://requests-docs-ja.readthedocs.org/en/latest/
 
 HTMLを解析するにはBeautifulSoup4を使うと良いでしょう。
 
+インストール
+
+```sh
+$ pip install beautifulsoup4
+```
+
 ```py
 >>> from bs4 import BeautifulSoup
 >>> soup = BeautifulSoup('<div><h1 id="test">TEST</h1></div>', 'html.parser')
