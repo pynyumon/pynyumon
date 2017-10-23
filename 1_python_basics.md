@@ -522,21 +522,21 @@ ImportError: No module named 'requests'
 venv環境を作成します。
 
 ```sh
-c:\Temp>c:\Python36\python -m venv env
+> python -m venv env
 ```
 
 venv環境に入ります。(activate.batを実行する)
 成功した場合はプロンプトマークが変わります。
 
 ```sh
-c:\Temp>env\Scripts\activate
-(env) c:\Temp>
+> env\Scripts\activate
+(env) >
 ```
 
 例としてrequestsをインストールします。
 
 ```sh
-(env) c:\Temp>pip install requests
+(env) > pip install requests
 ```
 
 installしたrequestsがimportできます。
@@ -550,8 +550,8 @@ installしたrequestsがimportできます。
 成功するとプロンプトマークがもとに戻ります。
 
 ```sh
-(env) c:\Temp>deactivate
-c:\Temp>
+(env) > deactivate
+>
 ```
 
 仮想環境から出たのでrequestsはimportできません。
@@ -576,7 +576,7 @@ $ rm -rf env
 Windows
 
 ```sh
-c:\Temp> rd /q /s env
+> rd /q /s env
 ```
 
 注意) env配下にソースコードなどを配置していた場合、それも消えてしまいます。ご注意ください。
