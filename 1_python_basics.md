@@ -519,48 +519,97 @@ ImportError: No module named 'requests'
 
 #### Windowsの場合
 
-venv環境を作成します。
+##### 事前準備 (PowerShell の実行ポリシーの確認と設定)
 
-```sh
-c:\Temp>c:\Python36\python -m venv env
+PowerShell の場合、 実行ポリシーが規定の設定の Restricted のではスクリプトを実行することができません。
+そのため venv を有効にするための activate も実行することできません。
+スクリプトの実行ができるようにするためには、実行ポリシーを変更する必要があります。
+
+現状の実行ポリシーの確認
+(デフォルトでは Undefined になっているはず。)
+
+```console
+PS: C:\> Get-ExecutionPolicy -Scope Process
+Undefined
 ```
 
-venv環境に入ります。(activate.batを実行する)
-成功した場合はプロンプトマークが変わります。
+RemoteSigned に変更する
 
-```sh
-c:\Temp>env\Scripts\activate
-(env) c:\Temp>
+```console
+PS: C:\> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process RemoteSigned
+```
+
+対話画面で変更してもよいかを聞かれるので、[Y] で変更に同意する。  
+
+以下は実際にやってみた例です。
+
+![powershell-sample-1](images/1/powershell-sample-1.png)
+
+###### 補足
+
+- `-Scope Process` と付けているのは、今開いているPowerShellのウィンドウでのみ有効にするためです。
+- もしも常に実行ポリシーを変更した状態にしたい場合は `-Scope CurrentUser` と置き替えて実行して下さい。
+- 実行ポリシーについて、詳しく知りたい方はこちらを参考にして下さい => [about_Execution_Policies](https://technet.microsoft.com/ja-JP/library/hh847748.aspx)
+
+##### venv の作成
+
+```console
+PS C:\> python -m venv env
+PS C:\> Get-ChildItem
+
+
+    ディレクトリ: C:\
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       2017/10/22     22:52                env    # <= env ディレクトリが作成される。
+```
+
+##### 仮想環境の有効化
+
+```console
+PS C:\> .\env\Scripts\activate
+(env) PS C:\>
 ```
 
 例としてrequestsをインストールします。
 
-```sh
-(env) c:\Temp>pip install requests
+```console
+(env) PS C:\> pip install requests
 ```
 
 installしたrequestsがimportできます。
 
-```python
+```console
+(env) PS C:\> python
+Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 17:26:49) [MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
 >>> import requests
 >>>
 ```
 
+##### 仮想環境から抜ける(無効化)
+
 環境から出るためにはdeactivateを実行します。
 成功するとプロンプトマークがもとに戻ります。
 
-```sh
-(env) c:\Temp>deactivate
-c:\Temp>
+```console
+(env) PS C:\> deactivate
+PS C:\>
 ```
 
 仮想環境から出たのでrequestsはimportできません。
 
-```python
+```console
+PS C:\> python
+Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 17:26:49) [MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
 >>> import requests
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-ImportError: No module named 'requests'
+ModuleNotFoundError: No module named 'requests'
+>>>
 ```
 
 #### 仮想環境が不要になったら?
@@ -575,8 +624,8 @@ $ rm -rf env
 
 Windows
 
-```sh
-c:\Temp> rd /q /s env
+```console
+PS C:\> Remove-Item -Path .\env -Recurse
 ```
 
 注意) env配下にソースコードなどを配置していた場合、それも消えてしまいます。ご注意ください。
