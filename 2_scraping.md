@@ -179,22 +179,3 @@ NaoY
 nobolis
 Matthias
 ```
-
-### その他
-
-スクレイピングのサンプルとしていくつか準備しています。参考にしてください。ただし一般のサイトもあるのでリクエストをバンバン投げることはやめてください。
-間違ってもループをそのまま回したらダメですよ。
-
-- PyConJPからチュートリアルの情報を抜き取る https://github.com/TakesxiSximada/happy-scraping/tree/master/pycon.jp
-- PyPIから新着パッケージの情報を抜き取る  https://github.com/TakesxiSximada/happy-scraping/tree/master/pypi.python.org
-- DjangoのAdminサイトの認証を突破する https://github.com/TakesxiSximada/happy-scraping/tree/master/djangoadmin
-- User-Agent詐称 https://github.com/TakesxiSximada/happy-scraping/tree/master/fake-useragent
-- Javascriptで動的に生成されるデータを抜き取る https://github.com/TakesxiSximada/happy-scraping/tree/master/dynamic-page
-
-## データ取ってみたら面白そうなサイト
-
-- https://teratail.com/ トップページのエントリとか刈り取ってみるとよいかも
-- http://isitchristmas.com/ クリスマス判定 (時期的に)
-- https://data.nasa.gov/developer NASAのデータが利用できるので調べてみると面白いものがあるかもしれない
-
-他にも良さそうなサイトはいっぱいありそう...
