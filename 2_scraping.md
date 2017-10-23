@@ -143,26 +143,26 @@ def main():
 
         # 参加者枠を示す文字に "講師・メンター枠" が含まれるものを取り出す
         if '講師・メンター枠' in participant_type:
-            menters_table = participation_table
+            mentors_table = participation_table
 
     # 講師・メンター枠の HTML の中で class=display_name に該当するものを取り出す
-    # menter_names は List
-    menter_names = menters_table.find_all(class_='display_name')
+    # mentor_names は List
+    mentor_names = mentors_table.find_all(class_='display_name')
 
     # 取り出した 講師・メンター枠の要素から純粋な名前だけを取り出す(不純なものを取り除く)
-    for menter_name in menter_names:
-        print(menter_name.get_text().strip())
+    for mentor_name in mentor_names:
+        print(mentor_name.get_text().strip())
 
 
 if __name__ == '__main__':
     main()
 ```
 
-上記の内容を `pynyumon6-menters.py` といった適当な名前のファイルに保存して実行すると利用できます。  
+上記の内容を `pynyumon6-mentors.py` といった適当な名前のファイルに保存して実行すると利用できます。  
 実行すると以下のとおりになります。
 
 ```console
-$ python pynyumon6-menters.py
+$ python pynyumon6-mentors.py
 Kei Iwasaki
 mocamocaland
 MasakiTakemori
