@@ -150,7 +150,7 @@ def main():
     # mentor_names は List
     mentor_names = mentors_table.find_all(class_='display_name')
 
-    # 取り出した 講師・メンター枠の要素から純粋な名前だけを取り出す(不純なものを取り除く)
+    # 取り出した 講師・メンター枠の要素から純粋な名前だけを取り出す(前後の無駄な空行や改行などを取り除く)
     for mentor_name in mentor_names:
         print(mentor_name.get_text().strip())
 
