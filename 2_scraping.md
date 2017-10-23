@@ -121,7 +121,7 @@ from bs4 import BeautifulSoup
 def main():
 
     # connpass の PyNumon#6 のイベント参加者・申込者一覧のURL
-    url = 'https://python-nyumon.connpass.com/event/62147/participation/#participants'
+    url = 'https://python-nyumon.connpass.com/event/62147/participation'
 
     # requests で参加者一覧の情報と取得する
     response = requests.get(url)
