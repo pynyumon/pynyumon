@@ -150,7 +150,7 @@ def main():
         # 参加者枠を示す文字に "講師・メンター枠" が含まれるものを取り出す
         if '講師・メンター枠' in participant_type:
             mentors_table = participation_table
-            brake
+            break
 
     # 講師・メンター枠の HTML の中で class=display_name に該当するものを取り出す
     # mentor_names は List
