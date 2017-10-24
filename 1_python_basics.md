@@ -1,14 +1,5 @@
 # 1.Python言語入門
 
-## インストール
-
-https://www.python.org/downloads/ にインストーラがあるのでそれを使ってインストールします。
-現在(2017/10/16)の最新はPython3.6.3です。
-
-Windows環境の方は環境変数を設定してください。
-この辺が参考になるかも。
-http://www.pythonweb.jp/install/setup/index1.html
-
 ## Pythonについて
 
 ### Pythonの実行
@@ -37,9 +28,11 @@ Windowsなら「PowerShell」, macOSなら「ターミナル」と呼ばれる�
 
 ### スクリプトの書き方と実行方法
 
+今まではPythonインタープリタの対話モード上でPythonのコードを直接実行していましたが、少し長い処理を書くには不便です。Python インタープリタの対話モードを終了し（Mac/Linuxの場合は【Ctrl】＋【D】、Windowsの場合は【Ctrl】＋【Z】を入力）、test.py というファイルを作成します。
+
 #### とりあえず書いて実行する
 
-書いて...
+test.pyを開き、以下のコードを書きます。
 
 ```python
 def main():
@@ -49,7 +42,7 @@ if __name__ == '__main__':
     main()
 ```
 
-実行...
+ファイルを保存して、実行します。
 
 ```python
 $ python test.py
