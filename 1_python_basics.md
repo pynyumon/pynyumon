@@ -39,7 +39,7 @@ Windowsなら「PowerShell」, macOSなら「ターミナル」と呼ばれる�
 
 #### とりあえず書いて実行する
 
-書いて...
+`test.py`を書いて...
 
 ```python
 def main():
@@ -51,7 +51,7 @@ if __name__ == '__main__':
 
 実行...
 
-```python
+```sh
 $ python test.py
 GOGO
 ```
