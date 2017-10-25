@@ -102,7 +102,7 @@ JSON形式もよく使われる形式です。標準モジュールの `json` �
 >>> json.dumps({'aho': 1, 'ajo': 2})
 '{"aho": 1, "aro": 2}'
 >>> json.loads('{"aho": 1, "ajo": 2}')
-{u'aho': 1, u'aro': 2}
+{'aho': 1, 'ajo': 2}
 ```
 
 - json.dumps() -> オブジェクトをJSON文字列にする
