@@ -1,14 +1,5 @@
 # 1.Python言語入門
 
-## インストール
-
-https://www.python.org/downloads/ にインストーラがあるのでそれを使ってインストールします。
-現在(2017/10/16)の最新はPython3.6.3です。
-
-Windows環境の方は環境変数を設定してください。
-この辺が参考になるかも。
-http://www.pythonweb.jp/install/setup/index1.html
-
 ## Pythonについて
 
 ### Pythonの実行
