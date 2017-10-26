@@ -514,8 +514,8 @@ ImportError: No module named 'requests'
 
 ##### 事前準備 (PowerShell の実行ポリシーの確認と設定)
 
-PowerShell の場合、 実行ポリシーが規定の設定の Restricted のではスクリプトを実行することができません。
-そのため venv を有効にするための activate も実行することできません。
+PowerShell の場合、 実行ポリシーが規定の設定の Restricted ではスクリプトを実行することができません。
+そのため venv を有効にするための activate も実行することができません。
 スクリプトの実行ができるようにするためには、実行ポリシーを変更する必要があります。
 
 現状の実行ポリシーの確認
