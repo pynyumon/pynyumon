@@ -208,6 +208,9 @@ KeyError: 'grape'
 >>>
 ```
 
+ここまでの dict の処理は、以下のページでより詳しく見ることができます。  
+https://goo.gl/LtXVCj
+
 ##### ちょっと応用
 
 先ほどの `fruits` を使って果物の金額を計算してみます。
@@ -284,6 +287,9 @@ calc_fruit_amount()関数はフルーツの名前と個数を指定すること�
 
 正しい金額を計算できていることがわかります。
 
+calc_fruit_amount()関数の処理は以下のページでより詳しく見ることができます。   
+https://goo.gl/66uvYA
+
 ### 制御構文
 
 #### if
@@ -313,6 +319,9 @@ def decide_amount(name, count, threshold=1000):
 
 decide_amount()では合計金額がthresholdより大きいか同じか未満かを判定してそれぞれ高い/普通/安いをprintしています。
 
+ここで登場した if の処理は以下のページでより詳しく見ることができます。
+https://goo.gl/xMMtvY
+
 #### for in
 
 リストなどの反復可能なobjectから要素を一つづつ取り出しながらループします。
@@ -341,6 +350,9 @@ fruits = {
 for name, amount in fruits.items():
     print('{} {} 円'.format(name, amount))
 ```
+
+ここで登場した for の処理は、以下のページでより詳しく見ることができます。  
+https://goo.gl/RZn9Xt
 
 #### try
 
@@ -373,6 +385,9 @@ def calc_fruit_amount(name, count):
         print('{}は存在しません'.format(name))
 ```
 
+ここで登場した try の処理は以下のページでより詳しく見ることができます。  
+https://goo.gl/Mg2LCB
+
 #### fizzbuzz
 
 fizzbuzzとは
@@ -396,6 +411,9 @@ for ii in range(1, 101):
     else:
        print(ii)
 ```
+
+ここで紹介している fizzbuzz の処理は、以下のページでより詳しく見ることができます。  
+https://goo.gl/bjNxPZ
 
 ### 標準モジュール
 
