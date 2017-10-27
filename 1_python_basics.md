@@ -39,7 +39,7 @@ Windowsなら「PowerShell」, macOSなら「ターミナル」と呼ばれる�
 
 上記のPythonインタープリタの対話モード上でPythonのコードを直接実行することもできますが、少し長い処理を書くには不便です。ここではファイルを作成して実行する方法を紹介します。
 
-Python インタープリタの対話モードを終了し（macOS/Linuxの場合は【Ctrl】+【D】、Windowsの場合は【Ctrl】+【Z】+ Enter を入力）、エディタを起動してtest.pyというファイルを作成します。 
+Python インタープリタの対話モードを終了し（Windowsの場合は【Ctrl】+【Z】、macOS/Linuxの場合は【Ctrl】+【D】を入力）、エディタを起動してtest.pyというファイルを作成します。 
 
 #### とりあえず書いて実行する
 
