@@ -441,7 +441,7 @@ Pythonユーザによっては独自に開発したパッケージをインタ�
 ここではHTTPライブラリをinstallします。
 
 ```sh
-$ sudo pip install requests
+$ pip install requests
 ```
 
 Pythonを起動してrequestsをimportします。
@@ -463,10 +463,8 @@ example.comにHTTPでGETリクエストを投げてみます。
 requestsが不要になった場合は`pip uninstall` でアンインストールできます。
 (y/n)で入力待ちになるのでyを入力しエンターキーを押下します。
 
-注意) 権限の問題でsudoが必要な場合が多いです。
-
 ```sh
-$ sudo pip uninstall requests
+$ pip uninstall requests
 〜省略〜
 Proceed (y/n)? y [ENTER]
   Successfully uninstalled requests-2.7.0
@@ -500,7 +498,6 @@ $ source env/bin/activate
 ```
 
 例としてrequestsをインストールします。
-※ venvで作成した環境はsudoが必要ありません。
 
 ```sh
 (env) $ pip install requests
