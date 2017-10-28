@@ -546,7 +546,7 @@ Undefined
 RemoteSigned に変更する
 
 ```console
-PS: C:\> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process RemoteSigned
+PS: C:\> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 ```
 
 対話画面で変更してもよいかを聞かれるので、[Y] で変更に同意する。  
