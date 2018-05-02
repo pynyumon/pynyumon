@@ -23,3 +23,5 @@ Python入門者向けハンズオンテキスト
   (講師: [@terapyon](https://twitter.com/terapyon))
 * 2017年10月28日(土) [Python入門者向けハンズオン #6](https://python-nyumon.connpass.com/event/62147/)
   (講師: [@laugh_k](https://twitter.com/laugh_k))
+* 2018年5月12日(土) [Python入門者向けハンズオン #7](https://python-nyumon.connpass.com/event/83667/)
+  (講師: [@laugh_k](https://twitter.com/laugh_k))
