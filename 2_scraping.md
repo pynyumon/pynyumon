@@ -166,6 +166,7 @@ if __name__ == '__main__':
 ```
 
 上記の内容を `pynyumon7-mentors.py` といった適当な名前のファイルに保存して実行すると利用できます。  
+
 実行すると以下のとおりになります。
 
 ```console
@@ -183,3 +184,4 @@ kashew_nuts
 Ryo KAJI
 
 ```
+
