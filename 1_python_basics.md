@@ -322,7 +322,7 @@ def decide_amount(name, count, threshold=1000):
 decide_amount()では合計金額がthresholdより大きいか同じか未満かを判定してそれぞれ高い/普通/安いをprintしています。
 
 ここで登場した if の処理は以下のページでより詳しく見ることができます。
-https://goo.gl/xMMtvY
+https://goo.gl/V2Et3W
 
 #### for in
 
@@ -388,7 +388,7 @@ def calc_fruit_amount(name, count):
 ```
 
 ここで登場した try の処理は以下のページでより詳しく見ることができます。  
-https://goo.gl/Mg2LCB
+https://goo.gl/39uWD7
 
 #### fizzbuzz
 
