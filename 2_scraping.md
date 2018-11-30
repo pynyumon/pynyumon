@@ -115,9 +115,9 @@ http://docs.python.jp/3/library/json.html
 
 ## サンプル
 
-### PyNyumon #7 の講師・メンターを取得する
+### PyNyumon #8 の講師・メンターを取得する
 
-[Python入門者向けハンズオン #7 - connpass](https://python-nyumon.connpass.com/event/83667/) の講師・メンター一覧を取得するものです。
+[Python入門者向けハンズオン #8 - connpass](https://python-nyumon.connpass.com/event/100817/) の講師・メンター一覧を取得するものです。
 
 ```python
 import requests
@@ -126,8 +126,8 @@ from bs4 import BeautifulSoup
 
 def main():
 
-    # connpass の PyNumon#7 のイベント参加者・申込者一覧のURL
-    url = 'https://python-nyumon.connpass.com/event/83667/participation'
+    # connpass の PyNumon#8 のイベント参加者・申込者一覧のURL
+    url = 'https://python-nyumon.connpass.com/event/100817/participation'
 
     # requests で参加者一覧の情報と取得する
     response = requests.get(url)
@@ -165,23 +165,16 @@ if __name__ == '__main__':
     main()
 ```
 
-上記の内容を `pynyumon7-mentors.py` といった適当な名前のファイルに保存して実行すると利用できます。  
+上記の内容を `pynyumon8-mentors.py` といった適当な名前のファイルに保存して実行すると利用できます。
 
 実行すると以下のとおりになります。
 
 ```console
-$ python pynyumon7-mentors.py
-OMEGA
-Kei Iwasaki
-shunsuke_takeno
-Takanori Suzuki
-tokibito
-mocamocaland
+$ python pynyumon8-mentors.py
 nikkie
-Noriyuki
 kashew_nuts
-株式会社タイセイ　アウトソーシング事業部 (伊藤/榊/武内)
-Ryo KAJI
-
+shi-ma
+Kei Iwasaki
+mocamocaland
 ```
 
