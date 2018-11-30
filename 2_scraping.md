@@ -68,7 +68,7 @@ https://www.crummy.com/software/BeautifulSoup/bs4/doc/
 
 CSVはカンマで区切られた形式のファイルです。csvモジュールが使えます。
 csv モジュールのさらに詳しい内容についてはこちらを参照してください。
-http://docs.python.jp/3/library/csv.html
+http://docs.python.org/ja/3.6/library/csv.html
 
 #### 書き込み
 
@@ -111,7 +111,7 @@ JSON形式もよく使われる形式です。標準モジュールの `json` �
 - json.load() -> ファイル内のJSON文字列を読み込んでオブジェクトにする
 
 詳しい内容についてはこちらを参照してください。
-http://docs.python.jp/3/library/json.html
+http://docs.python.org/ja/3.6/library/json.html
 
 ## サンプル
 
