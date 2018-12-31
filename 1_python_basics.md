@@ -20,7 +20,7 @@ Windowsなら「PowerShell」, macOSなら「ターミナル」と呼ばれる�
 
     ```
     $ python3.6
-    Python 3.6.3 (v3.6.3:2c5fed86e0, Oct  3 2017, 00:32:08) 
+    Python 3.6.3 (v3.6.3:2c5fed86e0, Oct  3 2017, 00:32:08)
     [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
@@ -30,7 +30,7 @@ Windowsなら「PowerShell」, macOSなら「ターミナル」と呼ばれる�
 
 上記のPythonインタープリタの対話モード上でPythonのコードを直接実行することもできますが、少し長い処理を書くには不便です。ここではファイルを作成して実行する方法を紹介します。
 
-Python インタープリタの対話モードを終了し（Windowsの場合は【Ctrl】+【Z】、macOS/Linuxの場合は【Ctrl】+【D】を入力）、エディタを起動してtest.pyというファイルを作成します。 
+Python インタープリタの対話モードを終了し（Windowsの場合は【Ctrl】+【Z】、macOS/Linuxの場合は【Ctrl】+【D】を入力）、エディタを起動してtest.pyというファイルを作成します。
 
 #### とりあえず書いて実行する
 
@@ -304,15 +304,24 @@ fruits = {
     'orange': 50,
 }
 
-def calc_fruit_amount(name, count):
+def calc_fruit_total_price(name, count):
+    """ 果物の合計金額を返す
+
+    引数: name:果物の名前 count:個数
+    戻り値: 合計金額
+    """
     return fruits[name] * count
 
 
 def decide_amount(name, count, threshold=1000):
-    amount = calc_fruit_amount(name, count)
-    if amount > threshold:
+    """ 合計金額を基準額と比較して、高いか安いか、普通かを判断する。
+
+    引数: name:果物の名前 count:個数 threshold:合計金額の基準額
+    """
+    total_price = calc_fruit_total_price(name, count)
+    if total_price > threshold:
         print('高い')
-    elif amount == threshold:
+    elif total_price == threshold:
         print('普通')
     else:  # < threshold
         print('安い')
